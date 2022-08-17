@@ -10,7 +10,7 @@ import (
 func ApiClient() *github.Client {
 	context := context.Background()
 	tokenService := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: "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"},
+		&oauth2.Token{AccessToken: ""},
 	)
 
 	tokenClient := oauth2.NewClient(context, tokenService)
