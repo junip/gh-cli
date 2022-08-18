@@ -10,6 +10,7 @@ import (
 
 	"github-cli/connect"
 
+	"github.com/kyokomi/emoji/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -68,6 +69,7 @@ func fetchRepoDetails(repoName string) {
 		Description: *repo.Description,
 	}
 
-	fmt.Printf("Repo Detail %v", repoDetail)
+	emoji.Println(repoDetail.Name)
+	emoji.Println(repoDetail.Description)
 
 }
